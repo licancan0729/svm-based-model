@@ -73,7 +73,7 @@ else:
     hypertension_num =0
 
 from joblib import dump, load
-svm = load('C:/Users/Administrator/Desktop/svm.joblib')
+svm = load('svm.joblib')
 # c=[[0, 0, 1, 1, 1, 1, 0],]
 c=[[gen,obesity_num, GENDER_num, age_num,smoke_num, FAMILY_num,hypertension_num],]
 a=svm.predict(c)
